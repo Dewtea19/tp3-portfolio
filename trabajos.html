@@ -6,6 +6,17 @@
     <title>Rocio Garcia Portfolio</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon.svg">
+    <script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+	</script>
 </head>
 <body>
     <header>
@@ -17,6 +28,133 @@
                 <source src="media/banner-trabajos.webm" type="video/webm">
                 <source src="media/banner-trabajos.ogv" type="video/webm">
             </video>
+        </section>
+        <section id="miniaturas">
+            <div class="foto-en-grid">
+                <a href="#foto-01"><img src="img/galeria-grid-01.png" width="251px" height="300px" alt="Chica dibujando" onClick="mostrarGaleria()"></a>
+                <h3>Verano</h3>
+                <p>Pequeño gif animado, con ilustraciones vectoriales.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-02"><img src="img/galeria-grid-02.png" width="251px" height="300px" alt="Personajito" onClick="mostrarGaleria()"></a>
+                <h3>Climbi</h3>
+                <p>Diseño de personaje y elementos para mascota de aplicación móvil.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-03"><img src="img/galeria-grid-03.png" width="251px" height="300px" alt="Pintura perro" onClick="mostrarGaleria()"></a>
+                <h3>Viena</h3>
+                <p>Ilustración digital, basada en una obra, para proyecto personal.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-04"><img src="img/galeria-grid-01.png" width="251px" height="300px" alt="Chica dibujando" onClick="mostrarGaleria()"></a>
+                <h3>Jurojin</h3>
+                <p>Una ilustración que combina lo digital con lo vectorial, con el fin de ser animada.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-05"><img src="img/galeria-grid-02.png" width="251px" height="300px" alt="Personajito" onClick="mostrarGaleria()"></a>
+                <h3>Jachiko</h3>
+                <p>Proyecto de identidad trabajado en el transcurso de la materia TD3.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-06"><img src="img/galeria-grid-03.png" width="251px" height="300px" alt="Pintura perro" onClick="mostrarGaleria()"></a>
+                <h3>Rejuvel</h3>
+                <p>Ilustraciones vectoriales para la publicidad del fármaco Rejuvel.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-07"><img src="img/galeria-grid-01.png" width="251px" height="300px" alt="Chica dibujando" onClick="mostrarGaleria()"></a>
+                <h3>Aventura sobre Rieles</h3>
+                <p>Proyecto de diseño editorial con temática infantil.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-08"><img src="img/galeria-grid-02.png" width="251px" height="300px" alt="Personajito" onClick="mostrarGaleria()"></a>
+                <h3>Kexp</h3>
+                <p>Ilustraciones vectoriales para cortos publicitarios del podcast “El Sonido” by KEXP.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-09"><img src="img/galeria-grid-03.png" width="251px" height="300px" alt="Pintura perro" onClick="mostrarGaleria()"></a>
+                <h3>Acotar</h3>
+                <p>Proyecto de identidad editoral trabajado en el transcurso de la materia TD4.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-10"><img src="img/galeria-grid-01.png" width="251px" height="300px" alt="Chica dibujando" onClick="mostrarGaleria()"></a>
+                <h3>Latas</h3>
+                <p>Diseño de packaging e identidad visual realizado durante la cursada TD3. </p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-11"><img src="img/galeria-grid-02.png" width="251px" height="300px" alt="Personajito" onClick="mostrarGaleria()"></a>
+                <h3>Vacío</h3>
+                <p>Proyecto de diseño editorial desarrollado durante el transcurso de la material TD4.</p>
+            </div>
+            <div class="foto-en-grid">
+                <a href="#foto-12"><img src="img/galeria-grid-03.png" width="251px" height="300px" alt="Pintura perro" onClick="mostrarGaleria()"></a>
+                <h3>Arte en Mov.</h3>
+                <p>Sistema de identidad para una muestra de arte, relizado durante la cursada de TDO.</p>
+            </div>
+        </section>
+        <section id="galeria">
+            <div id="fondo-galeria"></div>
+		    <ul id="galeria-oculta">
+				<li class="fraccion-galeria" id="foto-01">
+						<a href="#foto-12"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-02"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-02">
+						<a href="#foto-01"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-03"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-03">
+						<a href="#foto-02"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-04"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-04">
+						<a href="#foto-03"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-05"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-05">
+						<a href="#foto-04"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-06"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-06">
+						<a href="#foto-05"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-07"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-07">
+						<a href="#foto-06"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-08"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-08">
+						<a href="#foto-07"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-09"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-09">
+						<a href="#foto-08"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-10"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-10">
+						<a href="#foto-09"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-11"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-11">
+						<a href="#foto-10"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-12"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-12">
+						<a href="#foto-11"><img src="img/flecha-izq.svg" width="41px" height="81px" alt="Anterior"></a>
+						<img class="close" src="img/equis-cerrar.svg" alt="Cerrar" width="36px" height="36px" onClick="ocultarGaleria()">
+						<a href="#foto-01"><img src="img/next.svg" width="41px" height="81px" alt="Siguiente"></a>
+				</li>
+		    </ul>
         </section>
     </main>
     <footer>
