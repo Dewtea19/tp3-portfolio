@@ -97,7 +97,7 @@ body.color-fondo{
     background-color: #f2efc0;
 }
 
-.banner, .presentacion, .inicio, .cards, .intro-galeria{
+.banner, .presentacion, .inicio, .cards, .intro-galeria, .foto-en-grid, .sobre-mi{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,8 +168,6 @@ h2{
 }
 
 .sobre-mi{
-    display: flex;
-    flex-direction: column;
     align-content: flex-start;
     width: 40%;
     gap: 5px;
@@ -232,20 +230,142 @@ summary {
   opacity: 0.4;
 }
 
-.intro-galeria p, h2{
+.intro-g{
     color: #f2efc0;
+    text-align: center;
+    width: 50%;
+}
+
+.intro-galeria{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    left: 20%;
+    z-index: 20;
+    gap: 15px;
+}
+
+.foto-en-grid{
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 20px;
     text-align: center;
 }
 
-.intro-galeria {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    right: 30%;
-    z-index: 20;
-    gap: 15px;
-    padding: 15% 0%;
+h3.desc-g{
+    color: #dd9b26;
 }
+
+p.desc-g{
+color: #f2efc0;
+font-weight: 200;
+}
+
+#miniaturas{
+    width: 80%;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    justify-items: center;
+    justify-content: center;
+    padding: 3% 10%;
+}
+
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+	background-color: #000000;
+	position: absolute;
+	top: 0;
+	z-index: 60;
+}
+
+#galeria-oculta {
+	display: flex;
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 70;
+}
+
+.fraccion-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+}
+
+#foto-01 {
+	background-image: url("img/galeria-abierta-01.png");
+}
+
+#foto-02 {
+	background-image: url("img/galeria-abierta-02.png");
+}
+
+#foto-03 {
+	background-image: url("img/galeria-abierta-03.png");
+}
+
+#foto-04 {
+	background-image: url("img/galeria-abierta-04.png");
+}
+
+#foto-05 {
+	background-image: url("img/galeria-abierta-05.png");
+}
+
+#foto-06 {
+	background-image: url("img/galeria-abierta-06.png");
+}
+
+#foto-07 {
+	background-image: url("img/galeria-abierta-07.png");
+}
+
+#foto-08 {
+	background-image: url("img/galeria-abierta-08.png");
+}
+
+#foto-09 {
+	background-image: url("img/galeria-abierta-09.png");
+}
+
+#foto-10 {
+	background-image: url("img/galeria-abierta-10.png");
+}
+
+#foto-11 {
+	background-image: url("img/galeria-abierta-11.png");
+}
+
+#foto-12 {
+	background-image: url("img/galeria-abierta-12.png");
+}
+
+#fondo-galeria {
+	background-color: black;
+	opacity: 0.9;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 65;
+}
+
 
 @media screen and (max-width:1200px) {
 
