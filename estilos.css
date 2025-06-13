@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Delius Unicase", "poppins", 'sans-serif';
+    text-decoration: none;
+    list-style: none;
+    color: #f2efc0;
+}
+
+
+header {
+    width: 100%;
+    position: sticky;
+    top:0%;
+    background-color: #667256;
+    height: 10vh;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4em;
+    padding: 10px;
+}
+ .botonera-header{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+ }
+
+ header a:hover{
+    color: #2B3326;
+ }
+
+header li a img {
+    height: 7vh;
+    width: auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #667256;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    box-sizing: border-box;
+    gap: 0px;
+    text-align: left;
+    color: #f2efc0;
+    }
+
+footer ul {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5%;
+    }
+
+footer div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10%;
+    }
+
+footer h5 {
+    font-family: "poppins";
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+footer .logo-boton{
+    height: 7vh;
+    width: auto;
+}
+
+body{
+    background-color: #2B3326;
+}
+
+body.color-fondo{
+    background-color: #f2efc0;
+}
+
+.banner, .presentacion, .inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frase-inicio, .perfil-personal, .flores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+p {
+     font-family: "poppins";
+     font-size: 1em;
+    color: #2B3326;
+    }
+
+.banner{
+    background-image: url(img/ro-inicio-01.png);
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    padding: 5% 0%;
+    }
+
+#logo{
+    height: 50vh;
+    width: auto;
+    }
+
+.presentacion{
+    justify-content: center;
+    gap: 20px;
+    }
+
+.destacado01{
+    font-size: 3em;
+    color: #2B3326;
+    }
+
+.destacado02{
+    font-size: 1.5em;
+    color: #2B3326;
+}
+
+ article .inicio{
+    width: 60%;
+    padding: 15% 0%;
+    gap: 35px;
+}
+
+.frase-inicio{
+    justify-content: center;
+    padding: 25px 0px 0px;
+    gap: 50px;  
+}
+.perfil-personal{
+    width: 60%;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px 0px 0px;
+    gap: 20px;
+}
+
+h2{
+    color:#dd9b26;
+    font-size: 1.5em;
+}
+
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 40%;
+    gap: 5px;
+    padding-bottom: 30px;
+}
+
+.flores{
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+
+
+
+
+@media screen and (max-width:1200px) {
+
+}
+
+
+@media screen and (max-width:600px) {
+
+}
