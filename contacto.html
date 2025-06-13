@@ -38,30 +38,30 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <img src="img/chica contacto.png" width="770px" height="838px" alt="Chica cafetería">
-        <article>
-            <section>
-                <div>
-                    <h2>Contacto</h2>
-                    <p>Si tenés alguna duda, querés saber más, o te interesa trabajar juntos, no dudes en escribir.</p>
+    <main class="contacto">
+        <img src="img/chica contacto.png" width="770px" height="838px" alt="Chica cafetería" class="chica-cafe">
+        <article class="a-c">
+            <section class="c-cabecera">
+                <div class="titulos-c">
+                    <h2 class="t-c">Contacto</h2>
+                    <p class="t-c">Si tenés alguna duda, querés saber más, o te interesa trabajar juntos, no dudes en escribir.</p>
                 </div>
                 <img src="img/flor-02.svg" height="225px" width="134px" alt="flor amarilla">
             </section>
-            <section>
-                <h3>Hablemos! </h3>
+            <section class="formulario">
+                <h3 class="t-f">Hablemos! </h3>
                 <form method="post" action="mailto:rogarcia2701@gmail.com?subject=Consulta Portfolio" target="_blank" enctype="text/plain">
-                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre y Apellido *" required>
-                    <input type="email" name="email" id="email" placeholder="E-mail *" required>
-                    <select name="servicio" required>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre y Apellido *" required class="campo">
+                    <input type="email" name="email" id="email" placeholder="E-mail *" required class="campo">
+                    <select name="servicio" required class="campo">
                         <option value="" disabled selected>Servicio</option>
                         <option value="ilustracion">Ilustración</option>
                         <option value="diseno_editorial">Diseño Editorial</option>
                         <option value="diseno_personajes">Diseño de Personajes</option>
                         <option value="motion_graphics">Motion Graphics</option>
                     </select>
-                    <textarea name="mensaje" id="mensaje" placeholder="Asunto:" maxlength="500"></textarea>
-                    <input type="submit" value="Enviar" formenctype="text/plain">
+                    <textarea name="mensaje" id="mensaje" placeholder="Asunto:" maxlength="500" class="campo"></textarea>
+                    <input type="submit" value="Enviar" formenctype="text/plain" class="enviar">
                 </form>
             </section>
 
