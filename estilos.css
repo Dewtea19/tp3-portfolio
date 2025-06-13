@@ -11,6 +11,9 @@
     color: #f2efc0;
 }
 
+body{
+  cursor: url(img/cursor.svg) 0 0, auto;
+}
 
 header {
     width: 100%;
